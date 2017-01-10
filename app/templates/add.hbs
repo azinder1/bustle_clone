@@ -1,1 +1,29 @@
-{{admin-detail post=model}}
+<h4>Add New Post</h4>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="title">Title</label>
+      {{input value=title id="title"}}
+    </div>
+    <div class="form-group">
+      <label for="author">Author</label>
+      {{input value=author id="author"}}
+    </div>
+
+    <div class="form-group">
+      <label for="category">Category</label>
+      {{input value=category id="category"}}
+    </div>
+
+    <div class="form-group">
+      <label for="image">Image Link</label>
+      {{input value=image id="image"}}
+    </div>
+
+    <div class="form-group">
+      <label for="content">Content</label>
+      {{textarea value=content id="content"}}
+    </div>
+  </form>
+</div>
+  <button {{action 'savePost'}}>Add</button>
