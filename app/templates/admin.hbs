@@ -1,1 +1,6 @@
-{{outlet}}
+{{#link-to "add"}}<button >Add New Post</button>{{/link-to}}
+<ul>
+  {{#each model as |post|}}
+    {{admin-tile post=post}}
+  {{/each}}
+</ul>
