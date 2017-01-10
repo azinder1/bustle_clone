@@ -1,6 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background: url('https://cdn.bustle.com/nighthawk.bustle.com/production/images/featured-pattern-adf4d28b62ab3709637409b79515f043.svg');
+}
 nav {
-  width: 80%;
+  background: #f4f4f2;
+  width: 100%;
+  padding: 20px;
   margin: 0 auto;
+  img {
+    width: 70px;
+  }
   ul {
     display: flex;
     list-style: none;
@@ -20,4 +33,39 @@ nav {
 
 .all-posts {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .ember-view {
+    margin: 1%;
+    width: 48%;
+    .post-tile {
+      margin-bottom: 50px;
+      position: relative;
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 0.8em;
+      }
+      h3 {
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background: white;
+        height: 100px;
+        width: 80%;
+        text-align: center;
+        font-family: sans-serif;
+      }
+      img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+  }
 }
