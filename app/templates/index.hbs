@@ -1,7 +1,6 @@
 <h2>Welcome to Bustle</h2>
-
-<ul>
-{{#each model as |post|}}
+<div class="all-posts">
+  {{#each model as |post|}}
   {{post-tile post=post}}
-{{/each}}
-</ul>
+  {{/each}}
+</div>

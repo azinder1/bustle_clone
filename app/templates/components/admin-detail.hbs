@@ -2,7 +2,7 @@
 <img src={{post.image}}>
 <h2>{{post.title}}</h2>
 <p>
-  {{post.author}}-{{post.category}}
+  {{post.author}} - {{post.category}}
 </p>
 <p>
   {{post.content}}
@@ -35,10 +35,10 @@
 
       <div class="form-group">
         <label for="content">Content</label>
-        {{textarea value=post.content id="content"}} 
+        {{textarea value=post.content id="content"}}
       </div>
     </form>
-    <button {{action 'edit' post}}>Edit</button>
+    <button {{action 'edit' post}}>Save Changes</button>
   </div>
 {{else}}
   <button {{action 'showEditForm'}}>Edit</button>

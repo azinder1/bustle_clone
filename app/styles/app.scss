@@ -1,0 +1,23 @@
+nav {
+  width: 80%;
+  margin: 0 auto;
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    a {
+      transition: all ease-in-out 200ms;
+      text-decoration: none;
+      color: black;
+      font-family: sans-serif;
+      &:hover {
+        cursor: pointer;
+        color: grey;
+      }
+    }
+  }
+}
+
+.all-posts {
+  display: flex;
+}
