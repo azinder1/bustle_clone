@@ -5,7 +5,3 @@ export default Ember.Route.extend({
     return this.store.findAll('post');
   },
 });
-
-ember.$(document).ready(function(){
-  ember.$('.carousel').carousel();
-});
